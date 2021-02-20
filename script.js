@@ -67,3 +67,38 @@ num3 = Math.ceil(num3);
 
 const randomNum = Math.random();
 // console.log(randomNum);
+
+
+/*-------------- if-else, multiple conditions, else if --------------*/
+const userName = 'ali';
+const userPassword = 32145;
+const hasJob = true;
+// single condition
+if(userName == 'bali'){
+    console.log("give him access");
+}else{
+    console.log("you are Not right person");
+}
+
+// multiple conditions
+if(userName === 'bali' || userPassword === 321456){
+    console.log("Hi ali");
+}else{
+    console.log('You are a bad person');
+}
+
+if(userName == 'ali' && hasJob == true){
+    console.log("you can marry your girlfriend");
+}else{
+    console.log("you can't marry now");
+}
+
+// else if
+
+if(userName == 'ali'){
+    // do something
+}else if(userName == "bali"){
+    // do another thing
+}else{
+    // do as you wish
+}
