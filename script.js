@@ -30,8 +30,8 @@ let promiseInArr = promise.split(' ');
 let integerNum = 5;
 let floatNum = 3.05;
 let stringNumber = +'10' // +
-console.log(integerNum + "");
-console.log(stringNumber);
+// console.log(integerNum + "");
+// console.log(stringNumber);
 
 
 /*---------------- mathematical operation -----------------*/
@@ -51,3 +51,19 @@ num1 -= num2;
 // or, num1 = num1 - num2;
 num1 /= num2;
 // or, num1 = num1 / num2;
+
+
+/*------------------ round, floor, ceil, toFixed, random -------------------*/
+let num3 = 4.00083;
+let num4 = 5.05;
+let product = num3 * num4;
+product = +product.toFixed(1) // any integer value can go in toFixed method it means the number after the decimal point
+product = Math.round(product)
+num3 = Math.round(num3);
+num3 = Math.floor(num3);
+num3 = Math.ceil(num3);
+// console.log(product);
+// console.log(num3);
+
+const randomNum = Math.random();
+// console.log(randomNum);
