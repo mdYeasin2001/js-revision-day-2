@@ -14,3 +14,13 @@ let friend = 'abdul';
 let haveMoney = true;
 const haveGirlFriends = false;
 let friendsHave = 10;
+
+
+/* ----------- string case change and string split */
+let promise = 'I will hard work to become a Web Developer';
+let up =  promise.toUpperCase();
+let low = promise.toLowerCase();
+console.log(low, up, promise);
+console.log(promise.indexOf("won't"));
+let promiseInArr = promise.split(' ');
+console.log(promiseInArr[7]);
