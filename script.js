@@ -32,3 +32,22 @@ let floatNum = 3.05;
 let stringNumber = +'10' // +
 console.log(integerNum + "");
 console.log(stringNumber);
+
+
+/*---------------- mathematical operation -----------------*/
+let num1 = 5;
+let num2 = 3;
+const total = num1 + num2;
+const subtraction = num1 - num2;
+const multiplication = num1 * num2;
+const division = num1 / num2;
+const modulus = num1 % num2;
+
+num1 += num2;
+//or, num1 = num1 + num2;
+num1 *= num2;
+// or, num1 = num1 * num2;
+num1 -= num2;
+// or, num1 = num1 - num2;
+num1 /= num2;
+// or, num1 = num1 / num2;
