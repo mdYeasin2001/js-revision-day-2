@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local storage</title>
+</head>
+<body>
+    <script>
+        // fetch
+        fetch('url')
+        .then(res => res.json())
+        .then(data => console.log(data))
+        .catch(error => console.log(error))
+
+
+        const person = {name: 'abdul', age: 25}
+        const personStringify = JSON.stringify(person);
+        const personParse = JSON.parse(personStringify);
+        console.log(personStringify);
+        console.log(personParse);
+
+        // setItem
+        localStorage.setItem('userId', 5)
+        const personInLocal = localStorage.setItem('person', JSON.stringify(person));
+        const getPerson = localStorage.getItem('person');
+        const personParse2 = JSON.parse(getPerson)
+        console.log(personParse2.name);
+
+        console.log(Object.keys(personParse2))
+        console.log(Object.values(personParse2));
+
+        // getItem
+        const userId = localStorage.getItem('userId');
+        // console.log(userId);
+
+        
+    </script>
+</body>
+</html>
